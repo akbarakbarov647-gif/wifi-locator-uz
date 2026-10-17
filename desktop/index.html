@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wi‑Fi Locator UZ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f4f7fb;
+        color: #1f2937;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      button {
+        background: #0ea5e9;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      button:hover {
+        background: #0284c7;
+      }
+      pre {
+        background: #0f172a;
+        color: #e2e8f0;
+        padding: 16px;
+        border-radius: 8px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wi‑Fi Locator UZ</h1>
+      <div class="card">
+        <p>Bu desktop app loyihasining boshlang'ich UI qismi.</p>
+        <button id="scanBtn">Wi‑Fi skanerlash</button>
+        <pre id="output">Natija shu yerda ko'rsatiladi...</pre>
+      </div>
+    </div>
+
+    <script>
+      const output = document.getElementById('output');
+      document.getElementById('scanBtn').addEventListener('click', () => {
+        output.textContent = 'Wi‑Fi scan start...\n\nBu yerda Windows netsh va geolocation logika qo'shiladi.';
+      });
+    </script>
+  </body>
+</html>

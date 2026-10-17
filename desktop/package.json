@@ -1,0 +1,22 @@
+{
+  "name": "wifi-locator-uz-desktop",
+  "version": "0.1.0",
+  "description": "Wi‑Fi locator desktop app for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.0"
+  },
+  "build": {
+    "appId": "uz.wifi.locator",
+    "productName": "WiFi Locator UZ",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
